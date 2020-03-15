@@ -1,0 +1,48 @@
+.order {
+  width: 330px;
+  height: 319px;
+  padding: 29px 29px 37px;
+  box-sizing: border-box;
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+
+  &__date,
+  &__guests,
+  &__button {
+    display: flex;
+    width: 100%;
+  }
+
+  &__date,
+  &__guests {
+    padding-left: 17px;
+    border: 1px solid #e1e7ed;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+
+  &__date {
+    margin-top: 39px;
+    padding: 14px 0 14px 17px;
+  }
+
+  &__guests {
+    height: 50px;
+    margin: 16px 0 24px;
+  }
+
+  &__button {
+    justify-content: center;
+    height: 50px;
+    color: #fff;
+    background-color: rgba(253,92,99,1);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+
+    &:hover {
+      background-color: rgba(253,92,99,0.8);
+    }
+  }
+}

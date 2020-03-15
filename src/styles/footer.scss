@@ -1,0 +1,38 @@
+@import "mixins";
+@import "variables";
+
+.footer {
+  height: 213px;
+  box-shadow: 0 -1px 0 #e1e7ed;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  &__column {
+    width: 33.3%;
+  }
+
+  &__heding {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__link {
+    display: inline-block;
+    transition: color 0.5s;
+
+    &:hover {
+      color: #00acdc;
+    }
+  }
+}

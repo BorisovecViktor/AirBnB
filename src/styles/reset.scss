@@ -1,3 +1,19 @@
-body {
+body,
+h2,
+h3,
+h4,
+h5,
+p {
   margin: 0;
+}
+
+ul,
+button,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #3d4e61;
 }

@@ -3,62 +3,41 @@
 
 .header {
   height: $headerHeight;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 
   &__container {
-    @include gridCenterSpace-between;
-    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 19px 0 26px;
   }
 
   &__link {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 }
 
 .nav {
   &__list {
-    display: grid;
-    grid-auto-flow: column;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  &__item {
-    display: grid;
-    position: relative;
+    display: flex;
+    align-items: center;
   }
 
   &__item:not(:last-child) {
-    margin-right: 20px;
+    padding-right: 39px;
+  }
+
+  &__item:last-child {
+    display: flex;
   }
 
   &__link {
+    display: flex;
     line-height: $headerHeight;
-    font-size: 12px;
-    font-weight: 500;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #000;
+    transition: color 0.5s;
 
     &:hover {
       color: #00acdc;
     }
-  }
-}
-
-.is-active {
-  color: #00acdc;
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    height: 4px;
-    background: #00acdc;
-    border-radius: 2px;
   }
 }

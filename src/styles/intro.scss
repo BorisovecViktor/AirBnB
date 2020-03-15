@@ -1,0 +1,11 @@
+.intro {
+  height: 464px;
+  background-image: url(../images/intro1440.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: 2000px) {
+    background-image: url(../images/intro2000.png);
+  }
+}
