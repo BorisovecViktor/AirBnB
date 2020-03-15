@@ -1,0 +1,286 @@
+body,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0; }
+
+ul,
+button,
+input {
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: #3d4e61; }
+
+.header {
+  height: 60px; }
+  .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 19px 0 26px; }
+  .header__link {
+    width: 30px;
+    height: 30px; }
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.nav__item:not(:last-child) {
+  padding-right: 39px; }
+
+.nav__item:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.nav__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 60px;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s; }
+  .nav__link:hover {
+    color: #00acdc; }
+
+.intro {
+  height: 464px;
+  background-image: url(../images/intro1440.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  @media (min-width: 2000px) {
+    .intro {
+      background-image: url(../images/intro2000.png); } }
+
+.main__container {
+  max-width: 900px;
+  margin: 39px auto 75px; }
+
+.apartment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .apartment__details {
+    max-width: 493px; }
+  .apartment__header {
+    font-size: 36px;
+    line-height: 42px; }
+  .apartment__entire {
+    margin: 10px 0 15px;
+    color: #687c94; }
+  .apartment__conditions span {
+    margin-right: 18px; }
+  .apartment__info {
+    margin: 28px 0 5px;
+    height: 120px;
+    line-height: 24px; }
+  .apartment__contacts {
+    color: #3d4e61;
+    font-weight: 600; }
+    .apartment__contacts:hover {
+      color: #687c94; }
+  .apartment__amenities {
+    margin: 44px 0 66px; }
+  .apartment__reviews {
+    margin-bottom: 66px; }
+
+.amenities__header {
+  font-size: 20px; }
+
+.amenities__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 390px;
+  margin-top: 21px; }
+
+.amenities__item {
+  width: 50%;
+  margin-bottom: 13px; }
+
+.amenities__link {
+  color: #3d4e61;
+  font-weight: 600; }
+  .amenities__link:hover {
+    color: #687c94; }
+
+.reviews__header {
+  font-size: 28px; }
+
+.reviews__container {
+  position: relative;
+  margin-top: 34px; }
+
+.reviews__user-img {
+  position: absolute; }
+
+.reviews__user-name, .reviews__date {
+  margin-left: 71px; }
+
+.reviews__user-name {
+  margin-bottom: 8px;
+  font-size: 20px; }
+
+.reviews__date {
+  font-size: 14px; }
+
+.reviews__text {
+  width: 430px;
+  margin-top: 23px; }
+  .reviews__text--long-width {
+    width: 493px; }
+
+.owner__header {
+  font-size: 28px; }
+
+.owner__location {
+  margin: 11px 0 6px;
+  font-size: 14px; }
+
+.owner__info {
+  width: 430px;
+  margin: 6px 0 13px; }
+
+.owner__contact-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  height: 50px;
+  color: #118488;
+  border: 1px solid #118488;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+  .owner__contact-link:hover {
+    color: #fff;
+    background-color: #118488; }
+
+.order {
+  width: 330px;
+  height: 319px;
+  padding: 29px 29px 37px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #e1e7ed;
+  border-radius: 3px; }
+  .order__date, .order__guests, .order__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; }
+  .order__date, .order__guests {
+    padding-left: 17px;
+    border: 1px solid #e1e7ed;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 3px; }
+  .order__date {
+    margin-top: 39px;
+    padding: 14px 0 14px 17px; }
+  .order__guests {
+    height: 50px;
+    margin: 16px 0 24px; }
+  .order__button {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 50px;
+    color: #fff;
+    background-color: #fd5c63;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s; }
+    .order__button:hover {
+      background-color: rgba(253, 92, 99, 0.8); }
+
+.footer {
+  height: 213px;
+  -webkit-box-shadow: 0 -1px 0 #e1e7ed;
+          box-shadow: 0 -1px 0 #e1e7ed; }
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 900px;
+    height: 100%;
+    margin: 0 auto; }
+  .footer__column {
+    width: 33.3%; }
+  .footer__heding {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 19px; }
+  .footer__item:not(:last-child) {
+    margin-bottom: 9px; }
+  .footer__link {
+    display: inline-block;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s; }
+    .footer__link:hover {
+      color: #00acdc; }
+
+@font-face {
+  font-family: Avenir;
+  src: url(../fonts/Avenir-Book.ttf);
+  font-weight: 300; }
+
+@font-face {
+  font-family: Avenir;
+  src: url(../fonts/Avenir-Heavy.ttf);
+  font-weight: 900; }
+
+html {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #3d4e61; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.airBnb {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px; }
+
+/*# sourceMappingURL=main.css.map */

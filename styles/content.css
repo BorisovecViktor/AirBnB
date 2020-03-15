@@ -1,0 +1,118 @@
+.main__container {
+  max-width: 900px;
+  margin: 39px auto 75px; }
+
+.apartment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .apartment__details {
+    max-width: 493px; }
+  .apartment__header {
+    font-size: 36px;
+    line-height: 42px; }
+  .apartment__entire {
+    margin: 10px 0 15px;
+    color: #687c94; }
+  .apartment__conditions span {
+    margin-right: 18px; }
+  .apartment__info {
+    margin: 28px 0 5px;
+    height: 120px;
+    line-height: 24px; }
+  .apartment__contacts {
+    color: #3d4e61;
+    font-weight: 600; }
+    .apartment__contacts:hover {
+      color: #687c94; }
+  .apartment__amenities {
+    margin: 44px 0 66px; }
+  .apartment__reviews {
+    margin-bottom: 66px; }
+
+.amenities__header {
+  font-size: 20px; }
+
+.amenities__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 390px;
+  margin-top: 21px; }
+
+.amenities__item {
+  width: 50%;
+  margin-bottom: 13px; }
+
+.amenities__link {
+  color: #3d4e61;
+  font-weight: 600; }
+  .amenities__link:hover {
+    color: #687c94; }
+
+.reviews__header {
+  font-size: 28px; }
+
+.reviews__container {
+  position: relative;
+  margin-top: 34px; }
+
+.reviews__user-img {
+  position: absolute; }
+
+.reviews__user-name, .reviews__date {
+  margin-left: 71px; }
+
+.reviews__user-name {
+  margin-bottom: 8px;
+  font-size: 20px; }
+
+.reviews__date {
+  font-size: 14px; }
+
+.reviews__text {
+  width: 430px;
+  margin-top: 23px; }
+  .reviews__text--long-width {
+    width: 493px; }
+
+.owner__header {
+  font-size: 28px; }
+
+.owner__location {
+  margin: 11px 0 6px;
+  font-size: 14px; }
+
+.owner__info {
+  width: 430px;
+  margin: 6px 0 13px; }
+
+.owner__contact-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  height: 50px;
+  color: #118488;
+  border: 1px solid #118488;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+  .owner__contact-link:hover {
+    color: #fff;
+    background-color: #118488; }
+
+/*# sourceMappingURL=content.css.map */
