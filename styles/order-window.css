@@ -28,6 +28,9 @@
   .order__guests {
     height: 50px;
     margin: 16px 0 24px; }
+  .order input:focus,
+  .order input:hover {
+    border: 1px solid #fd5c63; }
   .order__button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -41,6 +44,8 @@
     -webkit-transition: background-color 0.5s;
     transition: background-color 0.5s; }
     .order__button:hover {
-      background-color: rgba(253, 92, 99, 0.8); }
+      background-color: rgba(253, 92, 99, 0.7); }
+    .order__button:focus {
+      border: 1px solid #e1e7ed; }
 
 /*# sourceMappingURL=order-window.css.map */
