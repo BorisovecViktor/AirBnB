@@ -3,20 +3,73 @@
 
 .main__container {
   max-width: 900px;
-  margin: 39px auto 75px;
+  padding: 39px 30px 75px;
+  margin: 0 auto;
 }
 
 .apartment {
   display: flex;
   justify-content: space-between;
 
-  &__details {
-    max-width: 493px;
+  &__container {
+    width: 100%;
   }
 
+  &__info {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1023px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__order {
+    @media (max-width: 1023px) {
+      margin-top: 30px;
+    }
+  }
+
+  &__details {
+    max-width: 491px;
+  }
+
+  &__amenities {
+    margin: 40px 0 66px;
+
+    @media (max-width: 1023px) {
+      text-align: center;
+    }
+  }
+
+  &__reviews {
+    margin-bottom: 66px;
+
+    @media (max-width: 1023px) {
+      max-width: 493px;
+      margin: 0 auto 66px;
+    }
+  }
+
+  &__owner {
+    @media (max-width: 1023px) {
+      max-width: 493px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.details {
   &__header {
     font-size: 36px;
     line-height: 42px;
+
+    @media (max-width: 574px) {
+      font-size: 30px;
+      line-height: 36px;
+    }
   }
 
   &__entire {
@@ -29,26 +82,18 @@
   }
 
   &__info {
-    margin: 28px 0 5px;
-    height: 120px;
+    margin: 28px 0;
     line-height: 24px;
   }
 
-  &__contacts {
+  &__link {
     color: #3d4e61;
     font-weight: 600;
+    transition: color 0.5s;
 
     &:hover {
-      color: #687c94;
+      color: #00acdc;
     }
-  }
-
-  &__amenities {
-    margin: 44px 0 66px;
-  }
-
-  &__reviews {
-    margin-bottom: 66px;
   }
 }
 
@@ -62,6 +107,14 @@
     flex-wrap: wrap;
     width: 390px;
     margin-top: 21px;
+
+    @media (max-width: 1023px) {
+      margin: 21px auto 0;
+    }
+
+    @media (max-width: 574px) {
+      max-width: 250px;
+    }
   }
 
   &__item {
@@ -88,7 +141,9 @@
     position: relative;
     margin-top: 34px;
   }
+}
 
+.card {
   &__user-img {
     position: absolute;
   }
@@ -114,6 +169,10 @@
     &--long-width {
       width: 493px;
     }
+
+    @media (max-width: 574px) {
+      width: 100%;
+    }
   }
 }
 
@@ -130,23 +189,27 @@
   &__info {
     width: 430px;
     margin: 6px 0 13px;
+
+    @media (max-width: 574px) {
+      width: 100%;
+    }
   }
 
-  &__contact-link {
+  &__link {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 150px;
     height: 50px;
-    color: #118488;
-    border: 1px solid #118488;
+    color: #00acdc;
+    border: 1px solid #00acdc;
     box-sizing: border-box;
     border-radius: 4px;
     transition: 0.5s;
 
     &:hover {
       color: #fff;
-      background-color: #118488;
+      background-color: #00acdc;
     }
   }
 }

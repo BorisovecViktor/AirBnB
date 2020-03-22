@@ -6,6 +6,12 @@
   border: 1px solid #e1e7ed;
   border-radius: 3px;
 
+  @media (max-width: 574px) {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
   &__date,
   &__guests,
   &__button {
