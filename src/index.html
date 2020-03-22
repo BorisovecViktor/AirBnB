@@ -1,12 +1,161 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalog</title>
-    <link rel="stylesheet" href="./styles/main.css">
-  </head>
-  <body>
-    <h1>Catalog</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AirBnB</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <h1 class="airBnb">AirBnB</h1>
+      <a href="#" class="header__link">
+        <img src="./images/logo.png" alt="logo-airBnb">
+      </a>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Become a host</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Trips</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Messages</a>
+          </li>
+          <li class="nav__item">
+            <img src="./images/userPhoto.png" alt="logo-airBnb">
+          </li>
+        </ul>
+      </nav>
+      <div class="burger">
+        <span class="burger__span"></span>
+        <span class="burger__span"></span>
+        <span class="burger__span"></span>
+      </div>
+    </div>
+  </header>
+  <div class="intro"></div>
+  <main class="main">
+    <div class="main__container apartment">
+      <div class="apartment__container">
+        <div class="apartment__info">
+          <div class="apartment__details details">
+            <h2 class="details__header">
+              Quiet apartment
+            </h2>
+            <p class="details__entire">
+              Entire apartment
+            </p>
+            <div class="details__conditions">
+              <span>4 guests</span>
+              <span>1 bed</span>
+              <span>1 bath</span>
+            </div>
+            <p class="details__info">City Apartment is newly renovated in the heart of Budapest, right in the city
+              center.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore
+              magna aliqua. Ut enim ad minim veniam.
+            </p>
+            <a href="#" class="details__link">
+              Contact host
+            </a>
+          </div>
+          <form class="apartment__order order" action="#" method="POST">
+            <span>25$ per night</span>
+            <input type="date" class="order__date" name="date" id="date" placeholder="Date" required>
+            <input type="text" class="order__guests" name="guests" placeholder="Guests" required>
+            <button type="submit" class="order__button">Book</button>
+          </form>
+        </div>
+        <div class="apartment__amenities amenities">
+          <h4 class="amenities__header">Amenities</h4>
+          <div class="amenities__container">
+            <span class="amenities__item">Elevator</span>
+            <span class="amenities__item">Hair dryer</span>
+            <span class="amenities__item">Washer</span>
+            <span class="amenities__item">Kitchen</span>
+          </div>
+          <a href="#" class="amenities__link">Show All Amenities</a>
+        </div>
+        <div class="apartment__reviews reviews">
+          <h3 class="reviews__header">Reviews</h3>
+          <div class="reviews__container card">
+            <img class="card__user-img" src="./images/ellipse.png" alt="user image">
+            <h4 class="card__user-name">John</h4>
+            <p class="card__date">September 2016</p>
+            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          </div>
+          <div class="reviews__container card">
+            <img class="card__user-img" src="./images/ellipse.png" alt="user image">
+            <h4 class="card__user-name">John</h4>
+            <p class="card__date">September 2016</p>
+            <p class="card__text card__text--long-width">Sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam.</p>
+          </div>
+        </div>
+        <div class="apartment__owner owner">
+          <h3 class="owner__header">Hosted by Jane</h3>
+          <p class="owner__location">Budapest, Hungary</p>
+          <p class="owner__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et magna aliqua.</p>
+          <a href="#" class="owner__link">Contact Host</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__column">
+        <h5 class="footer__heding">Airbnb</h5>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">About</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Press</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Help</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h5 class="footer__heding">Discover</h5>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">Travel credit</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Business</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Guidebooks</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h5 class="footer__heding">Hosting</h5>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">Why host</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Hospitality</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Community</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+
 </html>
