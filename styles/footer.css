@@ -6,14 +6,28 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     max-width: 900px;
     height: 100%;
+    padding: 0 30px;
     margin: 0 auto; }
+    @media (max-width: 574px) {
+      .footer__container {
+        height: auto; } }
   .footer__column {
     width: 33.3%; }
+    @media (max-width: 1023px) {
+      .footer__column {
+        text-align: center; } }
+    @media (max-width: 574px) {
+      .footer__column {
+        width: 50%;
+        margin-top: 40px;
+        text-align: left; } }
   .footer__heding {
     margin-bottom: 16px;
     font-size: 16px;

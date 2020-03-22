@@ -31,30 +31,47 @@
           </li>
         </ul>
       </nav>
+      <div class="burger">
+        <span class="burger__span"></span>
+        <span class="burger__span"></span>
+        <span class="burger__span"></span>
+      </div>
     </div>
   </header>
   <div class="intro"></div>
   <main class="main">
     <div class="main__container apartment">
-      <div class="apartment__details">
-        <h2 class="apartment__header">
-          Quiet apartment
-        </h2>
-        <p class="apartment__entire">
-          Entire apartment
-        </p>
-        <div class="apartment__conditions">
-          <span>4 guests</span>
-          <span>1 bed</span>
-          <span>1 bath</span>
+      <div class="apartment__container">
+        <div class="apartment__info">
+          <div class="apartment__details details">
+            <h2 class="details__header">
+              Quiet apartment
+            </h2>
+            <p class="details__entire">
+              Entire apartment
+            </p>
+            <div class="details__conditions">
+              <span>4 guests</span>
+              <span>1 bed</span>
+              <span>1 bath</span>
+            </div>
+            <p class="details__info">City Apartment is newly renovated in the heart of Budapest, right in the city
+              center.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore
+              magna aliqua. Ut enim ad minim veniam.
+            </p>
+            <a href="#" class="details__link">
+              Contact host
+            </a>
+          </div>
+          <form class="apartment__order order" action="#" method="POST">
+            <span>25$ per night</span>
+            <input type="date" class="order__date" name="date" id="date" placeholder="Date" required>
+            <input type="text" class="order__guests" name="guests" placeholder="Guests" required>
+            <button type="submit" class="order__button">Book</button>
+          </form>
         </div>
-        <p class="apartment__info">City Apartment is newly renovated in the heart of Budapest, right in the city center.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam.
-        </p>
-        <a href="#" class="apartment__contacts">
-          Contact host
-        </a>
         <div class="apartment__amenities amenities">
           <h4 class="amenities__header">Amenities</h4>
           <div class="amenities__container">
@@ -67,34 +84,29 @@
         </div>
         <div class="apartment__reviews reviews">
           <h3 class="reviews__header">Reviews</h3>
-          <div class="reviews__container">
-            <img class="reviews__user-img" src="./images/ellipse.png" alt="user image">
-            <h4 class="reviews__user-name">John</h4>
-            <p class="reviews__date">September 2016</p>
-            <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          <div class="reviews__container card">
+            <img class="card__user-img" src="./images/ellipse.png" alt="user image">
+            <h4 class="card__user-name">John</h4>
+            <p class="card__date">September 2016</p>
+            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           </div>
-          <div class="reviews__container">
-            <img class="reviews__user-img" src="./images/ellipse.png" alt="user image">
-            <h4 class="reviews__user-name">John</h4>
-            <p class="reviews__date">September 2016</p>
-            <p class="reviews__text reviews__text--long-width">Sed do eiusmod tempor incididunt ut labore et dolore
+          <div class="reviews__container card">
+            <img class="card__user-img" src="./images/ellipse.png" alt="user image">
+            <h4 class="card__user-name">John</h4>
+            <p class="card__date">September 2016</p>
+            <p class="card__text card__text--long-width">Sed do eiusmod tempor incididunt ut labore et dolore
               magna aliqua. Ut enim ad minim veniam.</p>
           </div>
         </div>
         <div class="apartment__owner owner">
           <h3 class="owner__header">Hosted by Jane</h3>
           <p class="owner__location">Budapest, Hungary</p>
-          <p class="owner__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.</p>
-          <a href="#" class="owner__contact-link">Contact Host</a>
+          <p class="owner__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et magna aliqua.</p>
+          <a href="#" class="owner__link">Contact Host</a>
         </div>
       </div>
-      <form class="apartment__order order" action="#" method="POST">
-        <span>25$ per night</span>
-        <input type="date" class="order__date" name="date" id="date" placeholder="Date" required>
-        <input type="text" class="order__guests" name="guests" placeholder="Guests" required>
-        <button type="submit" class="order__button">Book</button>
-      </form>
     </div>
   </main>
   <footer class="footer">
@@ -143,7 +155,7 @@
       </div>
     </div>
   </footer>
-
+  <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 
 </html>

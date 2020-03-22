@@ -6,6 +6,11 @@
           box-sizing: border-box;
   border: 1px solid #e1e7ed;
   border-radius: 3px; }
+  @media (max-width: 574px) {
+    .order {
+      width: 100%;
+      height: auto;
+      padding: 10px; } }
   .order__date, .order__guests, .order__button {
     display: -webkit-box;
     display: -ms-flexbox;
